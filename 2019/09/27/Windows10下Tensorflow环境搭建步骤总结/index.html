@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="UTF-8">
+
+    
+
+    
+
+    <title>Windows10下Tensorflow环境搭建步骤总结 | YuhsiHu&#39;s Blog</title>
+    <meta name="author" content="John Doe">
+    <meta name="version" content="1.0.0">
+    <meta name="keywords" content>
+    <meta name="description" content="TensorFlow是一个基于数据流编程（dataflow programming）的符号数学系统，被广泛应用于各类机器学习（machine learning）算法的编程实现，其前身是谷歌的神经网络算法库DistBelief。搭环境永远是最容易出错的事情，这学期选了《Python程序设计——深度学习及应用》这门课，所以借这个机会重新把安装流程梳理一下，记录一下自己容易犯错的地方。Anaconda的安装进入conda的主页 https://www.anaconda.com/  选择...">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+
+    
+    <link rel="alternate" href="/atom.xml" title="YuhsiHu&#39;s Blog" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/images/favicon.ico">
+    
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+    <main class="app">
+        <header id="header" class="header clearfix">
+    <div id="nav" class="nav">
+    <div class="nav-mobile">
+        <button id="open-panel" class="open-panel nav-mobile-item"><i class="icon-documents"></i></button>
+        <h1 class="nav-mobile-title nav-mobile-item">YuhsiHu&#39;s Blog</h1>
+        <button id="open-menus" class="open-panel nav-mobile-item"><i class="icon-library"></i></button>
+    </div>
+
+    <nav id="nav-inner" class="nav-inner">
+        
+            <a class="nav-item" href="/">
+                <span class="nav-text">Index</span>
+            </a>
+        
+            <a class="nav-item" href="/categories/note">
+                <span class="nav-text">Notes</span>
+            </a>
+        
+            <a class="nav-item" href="/categories/news">
+                <span class="nav-text">News</span>
+            </a>
+        
+            <a class="nav-item" href="/tags">
+                <span class="nav-text">Tags</span>
+            </a>
+        
+            <a class="nav-item" href="/archives">
+                <span class="nav-text">Archives</span>
+            </a>
+        
+            <a class="nav-item" href="/about">
+                <span class="nav-text">About</span>
+            </a>
+        
+    </nav>
+</div>
+
+    <aside id="aside" class="aside">
+    <div id="aside-mask" class="aside-mask"></div>
+    <div id="aside-inner" class="aside-inner">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit"><i class="icon-search-stroke"></i></button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+
+        
+        
+        
+        
+
+        
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Anaconda的安装"><span class="toc-number">1.</span> <span class="toc-text">Anaconda的安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Tensorflow的安装"><span class="toc-number">2.</span> <span class="toc-text">Tensorflow的安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Pycharm的安装"><span class="toc-number">3.</span> <span class="toc-text">Pycharm的安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#在Pycharm中导入tensorflow"><span class="toc-number">4.</span> <span class="toc-text">在Pycharm中导入tensorflow</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#运行第一段tensorflow代码"><span class="toc-number">5.</span> <span class="toc-text">运行第一段tensorflow代码</span></a></li></ol>
+        
+    </div>
+</aside>
+
+</header>
+
+        <div id="content" class="content">
+            <div id="wrapper" class="wrapper" style="max-width: 800px">
+                <article class="article" itemscope itemprop="blogPost">
+    
+    <header class="article-header">
+        
+        <h1 itemprop="name">
+            Windows10下Tensorflow环境搭建步骤总结
+        </h1>
+        
+        <div class="article-meta clearfix">
+            <a class="article-date" href="http://yoursite.com/2019/09/27/Windows10下Tensorflow环境搭建步骤总结/index.html">
+    
+    <i class="icon-calendar"></i>
+    
+    <time datetime="2019-09-27T00:53:34.000Z" itemprop="datePublished">2019-09-27</time>
+</a>
+
+            
+<div class="article-tag-list">
+    <i class="icon-tag"></i>
+    <a class="article-tag-link" href="/tags/教程/">教程</a>, <a class="article-tag-link" href="/tags/深度学习/">深度学习</a>
+</div>
+
+
+        </div>
+    </header>
+    
+    <section class="article-body markdown-body">
+        
+        <p>TensorFlow是一个基于数据流编程（dataflow programming）的符号数学系统，被广泛应用于各类机器学习（machine learning）算法的编程实现，其前身是谷歌的神经网络算法库DistBelief。搭环境永远是最容易出错的事情，这学期选了《Python程序设计——深度学习及应用》这门课，所以借这个机会重新把安装流程梳理一下，记录一下自己容易犯错的地方。</p>
+<a id="more"></a>
+
+<h2 id="Anaconda的安装"><a href="#Anaconda的安装" class="headerlink" title="Anaconda的安装"></a>Anaconda的安装</h2><ol>
+<li>进入conda的主页 <a href="https://www.anaconda.com/" target="_blank" rel="noopener">https://www.anaconda.com/</a>  <img src="/2019/09/27/Windows10下Tensorflow环境搭建步骤总结/Anaconda主页.png"></li>
+<li>选择操作系统，点击download下载    <img src="/2019/09/27/Windows10下Tensorflow环境搭建步骤总结/Anaconda下载.png"></li>
+<li>下载完成后，双击打开，选择路径，开始安装，中途选择添加环境变量和选择为默认python版本（如果先前已经有安装python，可以不选）</li>
+<li>安装完成后，cmd命令行输入conda，如果出现如图所示，则安装成功，否则须手动设置环境变量  <img src="/2019/09/27/Windows10下Tensorflow环境搭建步骤总结/conda验证.png">
+
+</li>
+</ol>
+<h2 id="Tensorflow的安装"><a href="#Tensorflow的安装" class="headerlink" title="Tensorflow的安装"></a>Tensorflow的安装</h2><ol>
+<li><p>Win+Q后输入Anaconda Navigator并打开</p>
+</li>
+<li><p>点击左侧environments，后点击Create  </p>
+  </li>
+<li><p>自己起一个环境命名，点击Create</p>
+</li>
+<li><p>环境完成后点击环境右方的按钮，选择open in terminal</p>
+</li>
+<li><p>打开终端后，输入  </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"> conda install tensorflow  </span><br><span class="line">``` </span><br><span class="line">若安装gpu版tensorflow为</span><br><span class="line"> ```bash</span><br><span class="line"> conda install tensorflow-gpu</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>这里安装完成后，CPU版就已完成，若安装GPU版tensorflow，请检查是否含有以下两个文件，若没有请搜索这两个文件并安装搜索方式为在上方的搜索栏里输入两个包名然后安装即可。</p>
+</li>
+<li><p>该部分完成后进入anaconda的目录，进入envs文件夹，该文件夹管理着所有安装的环境。</p>
+</li>
+<li><p>设置环境变量，控制面板——&gt;系统和安全——&gt;系统——&gt;高级系统设置。点击环境变量后，编辑系统变量中的path变量。将环境及环境下属的scripts目录复制到此处，至此环境安装完成。</p>
+</li>
+<li><p>打开cmd，输入py,进入python命令行，输入import tensorflow，如果不报错，则安装成功。</p>
+</li>
+</ol>
+<h2 id="Pycharm的安装"><a href="#Pycharm的安装" class="headerlink" title="Pycharm的安装"></a>Pycharm的安装</h2><ol>
+<li>进入官网 <a href="http://www.jetbrains.com/pycharm/?fromMenu" target="_blank" rel="noopener">http://www.jetbrains.com/pycharm/?fromMenu</a></li>
+<li>选择对应的操作系统，下载</li>
+<li>安装</li>
+<li>配置环境变量</li>
+</ol>
+<h2 id="在Pycharm中导入tensorflow"><a href="#在Pycharm中导入tensorflow" class="headerlink" title="在Pycharm中导入tensorflow"></a>在Pycharm中导入tensorflow</h2><ol>
+<li>在pycharm中新建一个project</li>
+<li>点击File——&gt;Settings，进入设置页面,选择Project Interpreter</li>
+<li>点击解释器路径旁的设置图标，选择add</li>
+<li>点击Conda Environment，选择Existing environment，将路径修改为tensorflow下的python.exe，切记不要选成原始的python路径！那样会无法找到tensorflow！      </li>
+<li>修改完成，一起来运行一波tensorflow代码试试看吧！</li>
+</ol>
+<h2 id="运行第一段tensorflow代码"><a href="#运行第一段tensorflow代码" class="headerlink" title="运行第一段tensorflow代码"></a>运行第一段tensorflow代码</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> tensorflow <span class="keyword">as</span> tf</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line"><span class="comment"># 使用 NumPy 生成假数据(phony data), 总共 100 个点.</span></span><br><span class="line">x_data = np.float32(np.random.rand(<span class="number">2</span>, <span class="number">100</span>)) <span class="comment"># 随机输入</span></span><br><span class="line">y_data = np.dot([<span class="number">0.100</span>, <span class="number">0.200</span>], x_data) + <span class="number">0.300</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 构造一个线性模型</span></span><br><span class="line">b = tf.Variable(tf.zeros([<span class="number">1</span>]))</span><br><span class="line">W = tf.Variable(tf.random_uniform([<span class="number">1</span>, <span class="number">2</span>], <span class="number">-1.0</span>, <span class="number">1.0</span>))</span><br><span class="line">y = tf.matmul(W, x_data) + b</span><br><span class="line"></span><br><span class="line"><span class="comment"># 最小化方差</span></span><br><span class="line">loss = tf.reduce_mean(tf.square(y - y_data))</span><br><span class="line">optimizer = tf.train.GradientDescentOptimizer(<span class="number">0.5</span>)</span><br><span class="line">train = optimizer.minimize(loss)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 初始化变量</span></span><br><span class="line">init = tf.initialize_all_variables()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 启动图 (graph)</span></span><br><span class="line">sess = tf.Session()</span><br><span class="line">sess.run(init)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 拟合平面</span></span><br><span class="line"><span class="keyword">for</span> step <span class="keyword">in</span> xrange(<span class="number">0</span>, <span class="number">201</span>):</span><br><span class="line">    sess.run(train)</span><br><span class="line">    <span class="keyword">if</span> step % <span class="number">20</span> == <span class="number">0</span>:</span><br><span class="line">        <span class="keyword">print</span> step, sess.run(W), sess.run(b)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 得到最佳拟合结果 W: [[0.100  0.200]], b: [0.300]</span></span><br></pre></td></tr></table></figure>
+
+<p>恭喜你，如果运行出现正确的结果，那么你在Windows 10下的tensorflow环境就搭建完成了！</p>
+
+        
+    </section>
+</article>
+
+
+
+<a id="pagenext" href="/2019/09/26/Pages-Hexo搭建个人博客总结/" class="article-next" title="使用Pages+Hexo搭建个人博客总结"><i class="icon-arrow-right"></i></a>
+
+
+
+
+<div class="comments">
+    <div id="comments"></div>
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+    new Gitalk({
+        clientID: "7b195dcbab3c87c482b6",
+        clientSecret: "51d29d7b949df8c365bdb6cadd6314b8ac29c6db",
+        repo: "yuhsihu.github.io",
+        owner: "yuhsihu",
+        admin: ["yuhsihu"],
+        id: "2019/09/27/Windows10下Tensorflow环境搭建步骤总结",
+        distractionFreeMode: true,
+        title: "Windows10下Tensorflow环境搭建步骤总结",
+        body: "http://yoursite.com/2019/09/27/Windows10下Tensorflow环境搭建步骤总结/",
+        labels: ["教程","深度学习"]
+    }).render('comments');
+    </script>
+</div>
+
+
+            </div>
+        </div>
+        <footer class="footer">
+    Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>, Theme by <a href="https://github.com/sanonz/hexo-theme-concise" target="_blank">Concise</a>
+
+    
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?6bece8218e89cece7039daa7631082b9";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    
+</footer>
+
+    </main>
+
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.9.0/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        var nodes = {
+            nav: $('#nav'),
+            aside: $('#aside'),
+            asideInner: $('#aside-inner'),
+            navInner: $('#nav-inner')
+        };
+
+        var doing = false;
+        nodes.asideInner.on('webkitAnimationEnd mozAnimationEnd oAnimationEnd oanimationend animationend', function() {
+            if (nodes.aside.hasClass('mobile-open')) {
+                nodes.aside.removeClass('mobile-open');
+            } else {
+                nodes.aside.removeClass('mobile-close panel-show');
+            }
+            doing = false;
+        });
+        $('#open-panel, #aside-mask').on('click', function() {
+            if (doing) {
+                return;
+            }
+            
+            if (nodes.aside.hasClass('panel-show')) {
+                nodes.aside.addClass('mobile-close');
+            } else {
+                nodes.aside.addClass('mobile-open panel-show');
+            }
+        });
+        $('#open-menus').on('click', function() {
+            nodes.navInner.slideToggle();
+        });
+
+        if (window.innerWidth <= 960) {
+            setTimeout(function() {
+                nodes.navInner.slideUp();
+            }, 3000);
+        }
+    });
+    </script>
+    
+        <script type="text/javascript" src="/js/scrollspy.min.js"></script>
+        <script type="text/javascript">
+        $(document.body).scrollspy({target: '#aside-inner'});
+
+        $(window).on('resize', function() {
+            var hw = $('#header').width();
+            var ww = $('#wrapper').width();
+            var space = ($(this).width() - hw - ww) / 2 / 2;
+
+            var pageprev = $('#pageprev');
+            var pagenext = $('#pagenext');
+            var avg = (pageprev.width() + pagenext.width()) / 2
+
+            if(space > avg) {
+                var len = space - avg / 2;
+                var styles = {position: 'fixed', top: '50%', marginTop: - (pageprev.width() + pagenext.width()) / 4}
+                pageprev.css($.extend({left: hw + len}, styles));
+                pagenext.css($.extend({right: len}, styles));
+            } else {
+                pageprev.removeAttr('style');
+                pagenext.removeAttr('style');
+            }
+        }).trigger('resize');
+        </script>
+    
+
+</body>
+</html>
