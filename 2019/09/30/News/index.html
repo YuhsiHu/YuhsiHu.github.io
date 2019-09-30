@@ -7,7 +7,7 @@
 
     
 
-    <title>Archives | YuhsiHu&#39;s Blog</title>
+    <title>News | YuhsiHu&#39;s Blog</title>
     <meta name="author" content="John Doe">
     <meta name="version" content="1.0.0">
     <meta name="keywords" content>
@@ -53,7 +53,7 @@
                 <span class="nav-text">Tags</span>
             </a>
         
-            <a class="nav-item active" href="/archives">
+            <a class="nav-item" href="/archives">
                 <span class="nav-text">Archive</span>
             </a>
         
@@ -69,6 +69,8 @@
     <div id="aside-inner" class="aside-inner">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit"><i class="icon-search-stroke"></i></button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
 
+        
+        
         
         
 
@@ -115,87 +117,59 @@
 
         <div id="content" class="content">
             <div id="wrapper" class="wrapper" style="max-width: 800px">
-                
-
-
+                <article class="article" itemscope itemprop="blogPost">
     
-    
-    
-    
-    
-    <section class="archives-wrap">
-    <div class="archive-year-wrap">
-    <a href="/archives/2019" class="page-hd">
-        2019
-    </a>
-    </div>
-    <ol class="archives">
-    
-
-    <li class="archive-section-item">
+    <header class="article-header">
         
-<article class="archive-article archive-type-[post]">
-    <div class="archive-article-inner">
-        <header class="archive-article-header">
-            <a class="archive-article-link" href="/2019/09/30/News/">News</a>
-            <span class="archive-article-date">
-                (<a class="article-date" href="/archives/2019/09">
-    
-    <time datetime="2019-09-30T09:52:01.000Z" itemprop="datePublished">9/30</time>
-</a>
-)
-            </span>
-        </header>
-    </div>
-</article>
-    </li>
-
-    
-    
-
-    <li class="archive-section-item">
+        <h1 itemprop="name">
+            News
+        </h1>
         
-<article class="archive-article archive-type-[post]">
-    <div class="archive-article-inner">
-        <header class="archive-article-header">
-            <a class="archive-article-link" href="/2019/09/27/Windows10下Tensorflow环境搭建步骤总结/">Windows10下Tensorflow环境搭建步骤总结</a>
-            <span class="archive-article-date">
-                (<a class="article-date" href="/archives/2019/09">
+        <div class="article-meta clearfix">
+            <a class="article-date" href="http://yoursite.com/2019/09/30/News/index.html">
     
-    <time datetime="2019-09-27T00:53:34.000Z" itemprop="datePublished">9/27</time>
+    <i class="icon-calendar"></i>
+    
+    <time datetime="2019-09-30T09:52:01.000Z" itemprop="datePublished">2019-09-30</time>
 </a>
-)
-            </span>
-        </header>
-    </div>
-</article>
-    </li>
 
-    
-    
+            
 
-    <li class="archive-section-item">
+        </div>
+    </header>
+    
+    <section class="article-body markdown-body">
         
-<article class="archive-article archive-type-[post]">
-    <div class="archive-article-inner">
-        <header class="archive-article-header">
-            <a class="archive-article-link" href="/2019/09/26/Pages-Hexo搭建个人博客总结/">使用Pages+Hexo搭建个人博客总结</a>
-            <span class="archive-article-date">
-                (<a class="article-date" href="/archives/2019/09">
-    
-    <time datetime="2019-09-26T10:59:52.000Z" itemprop="datePublished">9/26</time>
-</a>
-)
-            </span>
-        </header>
-    </div>
+        
+        
+    </section>
 </article>
-    </li>
 
 
-</ol></section>
+
+<a id="pagenext" href="/2019/09/27/Windows10下Tensorflow环境搭建步骤总结/" class="article-next" title="Windows10下Tensorflow环境搭建步骤总结"><i class="icon-arrow-right"></i></a>
 
 
+
+
+<div class="comments">
+    <div id="comments"></div>
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+    new Gitalk({
+        clientID: "7b195dcbab3c87c482b6",
+        clientSecret: "51d29d7b949df8c365bdb6cadd6314b8ac29c6db",
+        repo: "yuhsihu.github.io",
+        owner: "yuhsihu",
+        admin: ["yuhsihu"],
+        id: "2019/09/30/News",
+        distractionFreeMode: true,
+        title: "News",
+        body: "http://yoursite.com/2019/09/30/News/",
+        labels: []
+    }).render('comments');
+    </script>
+</div>
 
 
             </div>
@@ -259,6 +233,31 @@
         }
     });
     </script>
+    
+        <script type="text/javascript" src="/js/scrollspy.min.js"></script>
+        <script type="text/javascript">
+        $(document.body).scrollspy({target: '#aside-inner'});
+
+        $(window).on('resize', function() {
+            var hw = $('#header').width();
+            var ww = $('#wrapper').width();
+            var space = ($(this).width() - hw - ww) / 2 / 2;
+
+            var pageprev = $('#pageprev');
+            var pagenext = $('#pagenext');
+            var avg = (pageprev.width() + pagenext.width()) / 2
+
+            if(space > avg) {
+                var len = space - avg / 2;
+                var styles = {position: 'fixed', top: '50%', marginTop: - (pageprev.width() + pagenext.width()) / 4}
+                pageprev.css($.extend({left: hw + len}, styles));
+                pagenext.css($.extend({right: len}, styles));
+            } else {
+                pageprev.removeAttr('style');
+                pagenext.removeAttr('style');
+            }
+        }).trigger('resize');
+        </script>
     
 
 </body>
