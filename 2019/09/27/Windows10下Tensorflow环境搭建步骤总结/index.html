@@ -9,7 +9,6 @@
 
     <title>Windows10下Tensorflow环境搭建步骤总结 | YuhsiHu&#39;s Blog</title>
     <meta name="author" content="John Doe">
-    <meta name="version" content="1.0.0">
     <meta name="keywords" content>
     <meta name="description" content="TensorFlow是一个基于数据流编程（dataflow programming）的符号数学系统，被广泛应用于各类机器学习（machine learning）算法的编程实现，其前身是谷歌的神经网络算法库DistBelief。搭环境永远是最容易出错的事情，这学期选了《Python程序设计——深度学习及应用》这门课，所以借这个机会重新把安装流程梳理一下，记录一下自己容易犯错的地方。Anaconda的安装进入conda的主页 https://www.anaconda.com/  选择...">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -22,7 +21,28 @@
     <link rel="icon" href="/images/favicon.ico">
     
 
+    <style type="text/css">
+    @font-face {
+        font-family: 'icomoon';
+        src: url("/fonts/icomoon.eot?q628ml");
+        src: url("/fonts/icomoon.eot?q628ml#iefix") format('embedded-opentype'),
+             url("/fonts/icomoon.ttf?q628ml") format('truetype'),
+             url("/fonts/icomoon.woff?q628ml") format('woff'),
+             url("/fonts/icomoon.svg?q628ml#icomoon") format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+    </style>
     <link rel="stylesheet" href="/css/style.css">
+
+    <!--[if lt IE 9]>
+    <style type="text/css">
+    .nav-inner {top:0;}
+    .author-meta {position:static;top:0;}
+    .search-form {height:36px;}
+    </style>
+    <script type="text/javascript" src="https://unpkg.com/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+    <![endif]-->
 </head>
 <body>
 
@@ -237,7 +257,7 @@
             if (doing) {
                 return;
             }
-            
+
             if (nodes.aside.hasClass('panel-show')) {
                 nodes.aside.addClass('mobile-close');
             } else {
@@ -256,7 +276,7 @@
     });
     </script>
     
-        <script type="text/javascript" src="/js/scrollspy.min.js"></script>
+        <script src="/js/scrollspy.min.js"></script>
         <script type="text/javascript">
         $(document.body).scrollspy({target: '#aside-inner'});
 

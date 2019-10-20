@@ -9,7 +9,6 @@
 
     <title>News | YuhsiHu&#39;s Blog</title>
     <meta name="author" content="John Doe">
-    <meta name="version" content="1.0.0">
     <meta name="keywords" content>
     <meta name="description" content>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -22,7 +21,28 @@
     <link rel="icon" href="/images/favicon.ico">
     
 
+    <style type="text/css">
+    @font-face {
+        font-family: 'icomoon';
+        src: url("/fonts/icomoon.eot?q628ml");
+        src: url("/fonts/icomoon.eot?q628ml#iefix") format('embedded-opentype'),
+             url("/fonts/icomoon.ttf?q628ml") format('truetype'),
+             url("/fonts/icomoon.woff?q628ml") format('woff'),
+             url("/fonts/icomoon.svg?q628ml#icomoon") format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+    </style>
     <link rel="stylesheet" href="/css/style.css">
+
+    <!--[if lt IE 9]>
+    <style type="text/css">
+    .nav-inner {top:0;}
+    .author-meta {position:static;top:0;}
+    .search-form {height:36px;}
+    </style>
+    <script type="text/javascript" src="https://unpkg.com/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+    <![endif]-->
 </head>
 <body>
 
@@ -150,6 +170,8 @@
 <a id="pagenext" href="/2019/09/27/Windows10下Tensorflow环境搭建步骤总结/" class="article-next" title="Windows10下Tensorflow环境搭建步骤总结"><i class="icon-arrow-right"></i></a>
 
 
+<a id="pageprev" href="/2019/10/20/常用命令总结/" class="article-prev" title="常用命令总结"><i class="icon-arrow-left"></i></a>
+
 
 
 <div class="comments">
@@ -215,7 +237,7 @@
             if (doing) {
                 return;
             }
-            
+
             if (nodes.aside.hasClass('panel-show')) {
                 nodes.aside.addClass('mobile-close');
             } else {
@@ -234,7 +256,7 @@
     });
     </script>
     
-        <script type="text/javascript" src="/js/scrollspy.min.js"></script>
+        <script src="/js/scrollspy.min.js"></script>
         <script type="text/javascript">
         $(document.body).scrollspy({target: '#aside-inner'});
 
