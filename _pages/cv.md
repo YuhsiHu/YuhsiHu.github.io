@@ -11,37 +11,24 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* B.Eng. in Software Engineering, Northwestern Polytechnical University, 2020
+* M.Phil. in Computer and Information Engineering, The Chinese University of Hong Kong, Shenzhen, 2022
+* Ph.D. in Computer Science, Graz University of Technology, 2026 (expected)
 
 Work experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* July. 2020 - Oct. 2020: Software Development Engineer
+  * TP-LINK
+  * Duties included: Data transfer protocol between virtual devices
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Feb. 2022 - Aug. 2022: Research Intern
+  * XGRIDS
+  * Duties included: Learning-based multi-view-stereo and NeRF
 
-Publications
-======
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
+* Aug. 2022 - May. 2023: Software Development Engineer
+  * Baidu
+  * Duties included: CDN scheduling system and automated testing framework
+
 Talks
 ======
   <ul>{% for post in site.talks %}
@@ -53,7 +40,3 @@ Teaching
   <ul>{% for post in site.teaching %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
