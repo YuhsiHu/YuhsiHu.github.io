@@ -18,15 +18,15 @@ Education
 Work experience
 ======
 * July. 2020 - Oct. 2020: Software Development Engineer
-  * TP-LINK
+  * [TP-LINK](https://www.tp-link.com/en/)
   * Duties included: Data transfer protocol between virtual devices
 
 * Feb. 2022 - Aug. 2022: Research Intern
-  * XGRIDS
+  * [XGRIDS](https://www.xgrids.cn/)
   * Duties included: Learning-based multi-view-stereo and NeRF
 
 * Aug. 2022 - May. 2023: Software Development Engineer
-  * Baidu
+  * [Baidu](https://intl.cloud.baidu.com/)
   * Duties included: CDN scheduling system and automated testing framework
 
 Talks
