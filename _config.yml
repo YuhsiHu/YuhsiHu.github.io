@@ -88,7 +88,8 @@ author:
   googlescholar    : "https://scholar.google.com/citations?user=U6yM89YAAAAJ"
   email            : "yuxihu1998@gmail.com"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
-  uri              : "https://blog.csdn.net/YuhsiHu?type=blog"
+  uri              :
+  blog             : "https://blog.csdn.net/YuhsiHu?type=blog" 
   bitbucket        :
   codepen          :
   dribbble         :

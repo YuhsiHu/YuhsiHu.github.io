@@ -4,6 +4,6 @@ collection: publications
 permalink: /publication/2023-04-08-Bi-ClueMVSNet
 excerpt: 'Propose an end-to-end MVS framework that explicitly models the occlusion obstacle for depth map inference and 3D modeling.'
 date: 2023-04-08
-venue: 'IJCNN'
+venue: 'IEEE International Joint Conference on Neural Networks (IJCNN)'
 paperurl: 'http://YuhsiHu.github.io/files/Bi-ClueMVSNet.pdf'
 ---
