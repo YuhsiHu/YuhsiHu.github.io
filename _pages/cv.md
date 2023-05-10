@@ -19,16 +19,13 @@ Education
 
 Work experience
 ======
-* July. 2020 - Oct. 2020: [TP-LINK](https://www.tp-link.com/en/), Shenzhen, China
-#### Software Development Engineer
+* July. 2020 - Oct. 2020: [TP-LINK](https://www.tp-link.com/en/), Shenzhen, China \| **Software Development Engineer**
   * Duties included: Data transfer protocol between virtual devices
 
-* Feb. 2022 - Aug. 2022: [XGRIDS](https://www.xgrids.cn/), Shenzhen, China
-#### Research Intern
+* Feb. 2022 - Aug. 2022: [XGRIDS](https://www.xgrids.cn/), Shenzhen, China \| **Research Intern**
   * Duties included: Learning-based multi-view-stereo and NeRF
 
-* Aug. 2022 - May. 2023: [Baidu](https://intl.cloud.baidu.com/), Shenzhen, China
-#### Software Development Engineer
+* Aug. 2022 - May. 2023: [Baidu](https://intl.cloud.baidu.com/), Shenzhen, China \| **Software Development Engineer**
   * Duties included: CDN scheduling system and automated testing framework
 
 <!-- Talks
