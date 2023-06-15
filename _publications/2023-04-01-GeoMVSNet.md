@@ -5,5 +5,5 @@ permalink: /publication/2023-02-28-GeoMVSNet
 excerpt: 'Zhe Zhang, Rui Peng, **Yuxi Hu**, Ronggang Wang\*'
 date: 2023-02-28
 venue: 'IEEE/CVF Computer Vision and Pattern Recognition Conference (CVPR)'
-paperurl: 'http://YuhsiHu.github.io/files/GeoMVSNet.pdf'
+paperurl: 'https://github.com/doubleZ0108/GeoMVSNet'
 ---
