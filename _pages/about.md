@@ -11,7 +11,7 @@ redirect_from:
 ## Biography
 I am a PhD student at Institute of Visual Computing (IVC) in Graz University of Technology (TU Graz), supervised by [Prof. Friedrich Fraundorfer](https://ivc.tugraz.at/people/friedrich-fraundorfer/). I received the M.Phil. degree in Computer and Information Engineering from The Chinese University of Hong Kong, Shenzhen (CUHKSZ) in 2022, under the supervision of [Prof. Man-On Pun](https://mypage.cuhk.edu.cn/academics/simonpun/). Before that, I got my B.Eng. degree in Software Engineering at Northwestern Polytechnical University (NPU) in 2020. 
 
-<div class="logo" style="display: flex; justify-content: space-around; align-items: center; margin-top: 20px;">
+<div class="logo" style="display: flex; justify-content: space-around; align-items: center; margin-top: 10px; margin-bottom: 10px;">
   <a href="https://en.nwpu.edu.cn/"><img src="../images/logo_NPU.png" alt="NPU" style="height: 80px; width: auto;"></a>
   <a href="https://www.cuhk.edu.cn/en"><img src="../images/logo_CUHKSZ.png" alt="CUHKSZ" style="height: 80px; width: auto;"></a>
   <a href="https://www.tugraz.at/home"><img src="../images/logo_TUGraz.png" alt="TUGraz" style="height: 80px; width: auto;"></a>
@@ -19,7 +19,7 @@ I am a PhD student at Institute of Visual Computing (IVC) in Graz University of 
 
 In addition, I had worked at [XGRIDS](https://www.xgrids.com/) as a research intern and at [Baidu](https://intl.cloud.baidu.com/) as a software development engineer, respectively.
 
-<div class="logo" style="display: flex; justify-content: space-around; align-items: center; margin-top: 20px;">
+<div class="logo" style="display: flex; justify-content: space-around; align-items: center; margin-top: 10px; margin-bottom: 10px;">
   <a href="https://www.xgrids.com/"><img src="../images/logo_XGRIDS.png" alt="XGRIDS" style="height: 80px; width: auto;"></a>
   <a href="https://intl.cloud.baidu.com/"><img src="../images/logo_baidu.png" alt="baidu" style="height: 80px; width: auto;"></a>
 </div>
