@@ -28,15 +28,15 @@ My research focuses on advancing 3D scene reconstruction and understanding, stri
 
 ## Selected Publications
 - **GeoMVSNet: Learning Multi-View Stereo with Geometry Perception**  (**CVPR 2023**)  
-Zhe Zhang, Rui Peng, **Yuxi Hu**, Ronggang Wang  
+<small>Zhe Zhang, Rui Peng, **Yuxi Hu**, Ronggang Wang</small>  
 [[Paper]](https://openaccess.thecvf.com//content/CVPR2023/html/Zhang_GeoMVSNet_Learning_Multi-View_Stereo_With_Geometry_Perception_CVPR_2023_paper.html) [[Code]](https://github.com/doubleZ0108/GeoMVSNet)
 
 - **${C}^{3}$-GS: Learning Context-aware, Cross-dimension, Cross-scale Feature for Generalizable Gaussian Splatting** (**BMVC 2025**)  
-**Yuxi Hu**, Jun Zhang, Kuangyi Chen, Zhe Zhang, Friedrich Fraundorfer  
+<small>**Yuxi Hu**, Jun Zhang, Kuangyi Chen, Zhe Zhang, Friedrich Fraundorfer</small>  
 [[Paper]](https://bmvc2025.bmva.org/proceedings/787/) [[Code]](https://github.com/YuhsiHu/C3-GS)
 
 - **ICG-MVSNet: Learning Intra-view and Cross-view Relationships for Guidance in Multi-View Stereo** (**ICME 2025 Oral**)  
-**Yuxi Hu**, Jun Zhang, Zhe Zhang, Rafael Weilharter, Yuchen Rao, Kuangyi Chen, Runze Yuan, Friedrich Fraundorfer  
+<small>**Yuxi Hu**, Jun Zhang, Zhe Zhang, Rafael Weilharter, Yuchen Rao, Kuangyi Chen, Runze Yuan, Friedrich Fraundorfer</small>  
 [[Paper]](https://arxiv.org/abs/2503.21525) [[Code]](https://github.com/YuhsiHu/ICG-MVSNet)
 
 More on [Google Scholar](https://scholar.google.com/citations?user=U6yM89YAAAAJ&hl=en)
