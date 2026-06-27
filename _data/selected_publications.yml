@@ -1,0 +1,33 @@
+- title: "GeoMVSNet: Learning Multi-View Stereo with Geometry Perception"
+  venue: "CVPR 2023"
+  authors: "Zhe Zhang, Rui Peng, **Yuxi Hu**, Ronggang Wang"
+  teaser: "/images/publications/geomvsnet.jpg"
+  links:
+    - label: "Paper"
+      url: "https://openaccess.thecvf.com//content/CVPR2023/html/Zhang_GeoMVSNet_Learning_Multi-View_Stereo_With_Geometry_Perception_CVPR_2023_paper.html"
+    - label: "Code"
+      url: "https://github.com/doubleZ0108/GeoMVSNet"
+
+- title: "${C}^{3}$-GS: Learning Context-aware, Cross-dimension, Cross-scale Feature for Generalizable Gaussian Splatting"
+  venue: "BMVC 2025"
+  authors: "**Yuxi Hu**, Jun Zhang, Kuangyi Chen, Zhe Zhang, Friedrich Fraundorfer"
+  teaser: "/images/publications/c3-gs.gif"
+  links:
+    - label: "Project"
+      url: "https://yuhsihu.github.io/C3-GS/"
+    - label: "Paper"
+      url: "https://bmvc2025.bmva.org/proceedings/787/"
+    - label: "Code"
+      url: "https://github.com/YuhsiHu/C3-GS"
+
+- title: "ICG-MVSNet: Learning Intra-view and Cross-view Relationships for Guidance in Multi-View Stereo"
+  venue: "ICME 2025 Oral"
+  authors: "**Yuxi Hu**, Jun Zhang, Zhe Zhang, Rafael Weilharter, Yuchen Rao, Kuangyi Chen, Runze Yuan, Friedrich Fraundorfer"
+  teaser: "/images/publications/icg-mvsnet.jpg"
+  links:
+    - label: "Project"
+      url: "https://yuhsihu.github.io/ICG-MVSNet/"
+    - label: "Paper"
+      url: "https://ieeexplore.ieee.org/document/11209443"
+    - label: "Code"
+      url: "https://github.com/YuhsiHu/ICG-MVSNet"

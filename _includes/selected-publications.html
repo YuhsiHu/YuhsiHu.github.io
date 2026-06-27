@@ -1,0 +1,40 @@
+{% include base_path %}
+
+<div class="selected-publications">
+  {% for pub in site.data.selected_publications %}
+    {% assign primary_link = pub.links | first %}
+    <article class="publication-card">
+      {% if pub.teaser and pub.teaser != "" %}
+        <a class="publication-card__teaser-link" href="{{ primary_link.url }}" aria-label="{{ pub.title | strip_html | escape }} teaser">
+          <img
+            class="publication-card__teaser"
+            src="{{ pub.teaser | relative_url }}"
+            alt="{{ pub.title | strip_html | escape }} teaser">
+        </a>
+      {% endif %}
+
+      <div class="publication-card__body">
+        <h3 class="publication-card__title">
+          {{ pub.title | markdownify | remove: "<p>" | remove: "</p>" }}
+          {% if pub.venue %}
+            <span class="publication-card__venue">({{ pub.venue }})</span>
+          {% endif %}
+        </h3>
+
+        {% if pub.authors %}
+          <p class="publication-card__authors">
+            {{ pub.authors | markdownify | remove: "<p>" | remove: "</p>" }}
+          </p>
+        {% endif %}
+
+        {% if pub.links %}
+          <p class="publication-card__links">
+            {% for link in pub.links %}
+              <a href="{{ link.url }}">{{ link.label }}</a>
+            {% endfor %}
+          </p>
+        {% endif %}
+      </div>
+    </article>
+  {% endfor %}
+</div>
