@@ -8,6 +8,18 @@
     - label: "Code"
       url: "https://github.com/doubleZ0108/GeoMVSNet"
 
+- title: "CrossPressor: Scalable Cross-View Fusion for Feed-Forward 3D Gaussian Splatting"
+  venue: "WACV 2027"
+  authors: "**Yuxi Hu**, Wenhao Dong, Jun Zhang, Friedrich Fraundorfer"
+  teaser: "/images/publications/crosspressor_teaser.jpg"
+  links:
+    - label: "Project"
+      url: "https://yuhsihu.github.io/CrossPressor/"
+    - label: "Paper"
+      url: ""
+    - label: "Code"
+      url: "https://github.com/YuhsiHu/CrossPressor"
+
 - title: "${C}^{3}$-GS: Learning Context-aware, Cross-dimension, Cross-scale Feature for Generalizable Gaussian Splatting"
   venue: "BMVC 2025"
   authors: "**Yuxi Hu**, Jun Zhang, Kuangyi Chen, Zhe Zhang, Friedrich Fraundorfer"
