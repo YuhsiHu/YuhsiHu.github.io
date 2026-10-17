@@ -1,17 +1,7 @@
-- title: "GeoMVSNet: Learning Multi-View Stereo with Geometry Perception"
-  venue: "CVPR 2023"
-  authors: "Zhe Zhang, Rui Peng, **Yuxi Hu**, Ronggang Wang"
-  teaser: "/images/publications/geomvsnet.jpg"
-  links:
-    - label: "Paper"
-      url: "https://openaccess.thecvf.com//content/CVPR2023/html/Zhang_GeoMVSNet_Learning_Multi-View_Stereo_With_Geometry_Perception_CVPR_2023_paper.html"
-    - label: "Code"
-      url: "https://github.com/doubleZ0108/GeoMVSNet"
-
 - title: "CrossPressor: Scalable Cross-View Fusion for Feed-Forward 3D Gaussian Splatting"
   venue: "WACV 2027"
   authors: "**Yuxi Hu**, Wenhao Dong, Jun Zhang, Friedrich Fraundorfer"
-  teaser: "/images/publications/crosspressor_teaser.jpg"
+  teaser: "/images/publications/crosspressor.jpg"
   links:
     - label: "Project"
       url: "https://yuhsihu.github.io/CrossPressor/"
@@ -43,3 +33,13 @@
       url: "https://ieeexplore.ieee.org/document/11209443"
     - label: "Code"
       url: "https://github.com/YuhsiHu/ICG-MVSNet"
+
+- title: "GeoMVSNet: Learning Multi-View Stereo with Geometry Perception"
+  venue: "CVPR 2023"
+  authors: "Zhe Zhang, Rui Peng, **Yuxi Hu**, Ronggang Wang"
+  teaser: "/images/publications/geomvsnet.jpg"
+  links:
+    - label: "Paper"
+      url: "https://openaccess.thecvf.com//content/CVPR2023/html/Zhang_GeoMVSNet_Learning_Multi-View_Stereo_With_Geometry_Perception_CVPR_2023_paper.html"
+    - label: "Code"
+      url: "https://github.com/doubleZ0108/GeoMVSNet"
