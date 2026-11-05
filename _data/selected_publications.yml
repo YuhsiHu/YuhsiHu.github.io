@@ -1,3 +1,15 @@
+- title: "BudgetSplat: Budget-Controllable Generalizable Gaussian Splatting"
+  venue: "arXiv"
+  authors: "**Yuxi Hu**, Jun Zhang, Wei Mao, Yuchen Rao, Friedrich Fraundorfer"
+  teaser: "/images/publications/budgetsplat.gif"
+  links:
+    - label: "Project"
+      url: ""
+    - label: "Paper"
+      url: "https://arxiv.org/abs/2611.06593"
+    - label: "Code"
+      url: ""
+  
 - title: "CrossPressor: Scalable Cross-View Fusion for Feed-Forward 3D Gaussian Splatting"
   venue: "WACV 2027"
   authors: "**Yuxi Hu**, Wenhao Dong, Jun Zhang, Friedrich Fraundorfer"
@@ -6,7 +18,7 @@
     - label: "Project"
       url: "https://yuhsihu.github.io/CrossPressor/"
     - label: "Paper"
-      url: ""
+      url: "https://arxiv.org/abs/2611.06258"
     - label: "Code"
       url: "https://github.com/YuhsiHu/CrossPressor"
 
