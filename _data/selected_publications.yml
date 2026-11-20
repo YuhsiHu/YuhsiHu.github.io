@@ -13,7 +13,7 @@
 - title: "CrossPressor: Scalable Cross-View Fusion for Feed-Forward 3D Gaussian Splatting"
   venue: "WACV 2027"
   authors: "**Yuxi Hu**, Wenhao Dong, Jun Zhang, Friedrich Fraundorfer"
-  teaser: "/images/publications/crosspressor.jpg"
+  teaser: "/images/publications/crosspressor.gif"
   links:
     - label: "Project"
       url: "https://yuhsihu.github.io/CrossPressor/"
